@@ -6,7 +6,10 @@ import Launches from "./components/Launches";
 import Launch from "./components/Launch";
 
 const client = new ApolloClient({
-  uri: "http://localhost:5000/graphql",
+  // Dev
+  // uri: "http://localhost:5000/graphql",
+  // Prod
+  uri: "/graphql",
   cache: new InMemoryCache(),
 });
 
